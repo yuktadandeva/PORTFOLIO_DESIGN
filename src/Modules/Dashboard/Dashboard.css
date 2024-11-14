@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;           
+    margin: 0;               
+  }
+   
+.dashboard{
+    width: 100%; 
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.grid{
+    margin-top: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 5fr 2fr;
+}
+
+.grid div{
+    border-radius: 15px;
+}
+
+.grid1{
+      display: grid;
+      grid-template-columns: 6fr 1fr 5fr;
+      grid-template-rows: 4fr 3fr;
+      gap: 10px;
+}
+
+.grid2{
+      gap: 10px;
+      display: grid;
+      grid-template-rows: 5fr 1fr;
+}
+
+.gridbox1{
+      grid-column: span 2;
+      background-color: rgb(228, 246, 253);
+}
+
+.header,.gridbox1, .gridbox3,.gridbox4,.gridbox5,.gridbox6{
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+}
+
+.visible{
+      opacity: 1;
+}
+
+.gridbox2{
+    background-color: rgb(197, 235, 248);
+    animation: intro;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+   }
+
+@keyframes intro{
+   0%{
+      transform: translate(-50px,70px) scale(1.2);
+   }15%{
+      transform: translate(-50px,50px) scale(1.2);
+   }30%{
+      transform: scale(1.2);
+   }80%{
+      transform: scale(1);
+   }
+   100%{
+      transform: translate(0,0);
+   }
+}
+
+.gridbox3{
+    background-color: rgb(228, 246, 253);
+}
+
+.gridbox4{
+    grid-column: span 2;
+    background-color: rgb(132, 217, 245);
+}
+  
+.gridbox5{
+    background-color: rgb(228, 246, 253);
+}
+   
+.gridbox6{
+    background-color: rgb(197, 235, 248);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileImage{
+    display: none;
+}
+
+   /* phone */
+@media (max-width: 767px) {
+
+    .profileImage{
+        display: block;
+        width: 100%;
+        min-height: 200px;
+        background: radial-gradient(circle, rgb(197, 235, 248) 20%,white 100%);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+
+    .profileImage img{
+        border-radius: 50%;
+        width: 35%;
+        height: 80%;
+    }
+
+    body{
+        display: block;
+    }
+   
+    .grid, .grid1, .grid2{
+         display: block;
+    }
+
+    .gridbox2{
+        display: none;
+        animation: none;
+    }
+
+    .gridbox5{
+        min-height: 180px;
+    }
+    
+    .grid div{
+        margin: 5px 0px;
+    }
+    
+
+    .dashboard{
+       padding: 5px;
+    }
+}
+    
+    
+    @media (min-width: 768px) and (max-width: 1024px) {
+    
+    }

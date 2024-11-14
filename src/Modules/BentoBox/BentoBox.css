@@ -1,0 +1,111 @@
+.bento{
+    height: auto;
+    min-height: 150px;
+    padding: 20px;
+    position: relative;
+}
+
+.label{
+    position: absolute;
+    left: 5%;
+    top: 100%;
+}
+
+.svg{
+    position: absolute;
+    right: 5%;
+    top: 8%;
+    transform-origin: center;
+    animation: rotateAnimation 2.5s 1 ease-out;
+}
+  
+@keyframes rotateAnimation{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+.texttop{
+    position: absolute;
+    top: 10%;
+}
+
+.textrighttop{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    font-weight: 200;
+}
+
+.desc{
+    position: absolute;
+    top: 30%;
+    width: 70%;
+}
+
+.svg2{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+  }
+
+.toprightsvg{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+}
+
+@media (max-width: 767px) {
+  .profileImage{
+    display: block;
+    width: 100px;
+    height: 100px;
+  }
+
+  img{
+    height: 100%;
+    width: 100%;
+  }
+
+  .label{
+    font-size: smaller;
+    width: 40%;
+  }
+
+  .toprightsvg{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+}
+
+  .textrighttop, .texttop, .label{
+    position: static;
+  }
+
+  .bento{
+    height: auto;
+    min-height: 190px;
+    padding: 15px;
+    position: relative;
+}
+
+  .svg{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform-origin: center;
+    animation: rotateAnimation 2.5s 1 ease-out;
+  }
+
+  .svg2{
+    display: none;
+  }
+
+  .desc{
+    position: static;
+}
+
+}

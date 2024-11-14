@@ -1,0 +1,15 @@
+
+.contact{
+  background: radial-gradient(circle, rgb(197, 235, 248) 20%,white 80%);
+    height: 80vh;
+    width: 100%;
+    padding: 50px;
+}
+
+@media (max-width: 767px) {
+  
+}
+
+p{
+  font-weight: 200;
+}

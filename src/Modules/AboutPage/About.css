@@ -1,0 +1,31 @@
+.aboutContainer{
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+    /* height: auto; */
+    /* min-height: 100%; */
+    background: radial-gradient(circle, rgb(197, 235, 248) 40%,white 100%);
+}
+
+.aboutContainer img{
+    border-radius: 50%;
+    margin-top: 60px;
+    width: 150px;
+    min-height: 150px;
+}
+
+.topImage{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.aboutContainer {
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+   
+}

@@ -1,0 +1,16 @@
+{
+    "slides":[
+        {
+            "src":"/utils/pictures/projects/project1.png",
+            "alt":"image 1"
+        },
+        {
+            "src":"/utils/pictures/projects/project2.png",
+            "alt":"image 2"
+        },
+        {
+            "src":"/utils/pictures/projects/project3.png",
+            "alt":"image 3"
+        }
+    ]
+}

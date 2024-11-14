@@ -1,0 +1,21 @@
+.center{
+    width: 100%;
+    height: 100vh;
+    padding: ;
+}
+.projectGrid{
+    display: grid;
+    /* align-items: center; 
+    justify-items: center; */
+    width: 100%;
+    height: 95vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr;
+}
+
+.projectGrid div{
+    border: 1px solid grey;
+    background-color: bisque;
+    height: 100%;
+    
+}
